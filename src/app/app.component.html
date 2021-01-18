@@ -1,0 +1,29 @@
+<div class="container">
+<div class="row">
+  <div clss="col-xs-12">
+  <h1> i am app component</h1>
+<hr>
+<!--<button class="btn btn-primary" (click)="showScrete= !showScrete">display details</button>-->
+<button class="btn btn-primary" (click)="toToggleDetails()">display details</button>
+<p *ngIf="showScrete">Screte passowrd= tuna</p>
+<div *ngFor="let logItem of log" 
+  [ngStyle]="{backgroundColor: logItem >=5 ? 'blue': 'white'}"
+   [ngClass]="{'white-text': logItem >= 5}">
+  {{ logItem }}</div>
+
+
+
+
+
+
+<!--
+<app-servers></app-servers>
+<app-server></app-server>
+<app-server></app-server>
+<br/>-->
+<!--<p>
+  <app-success-alert></app-success-alert>
+  <app-warning-alert></app-warning-alert>
+  
+</p>-->
+</div></div></div>
